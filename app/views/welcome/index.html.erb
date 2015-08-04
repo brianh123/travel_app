@@ -10,9 +10,9 @@
  <% end %>
  </ul>
 
-
+<%= link_to "Blue", {controller: "welcome", action: "about", color: "blue"}, class: "btn btn-primary" %>
 <h3>Array of Images</h3>
 
 <% @images.each do |pic| %>
-	<%= image_tag pic, class: "size-down" %>
+	<%= image_tag pic, class: "img-responsive" %>
 	<% end %>
